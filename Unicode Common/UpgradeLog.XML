@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Common">
+</Property><Property Name="Solution File" Value="D:\Development\Programs\Visual C++\Chris C++\Common\Common.sln">
+</Property><Property Name="User Options File" Value="D:\Development\Programs\Visual C++\Chris C++\Common\Common.suo">
+</Property><Property Name="Date" Value="Monday, November 24, 2008">
+</Property><Property Name="Time" Value="21:32 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Common.sln" Description="File successfully backed up as D:\Development\Programs\Visual C++\Chris C++\Common\Common.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="Common.suo" Description="File successfully backed up as D:\Development\Programs\Visual C++\Chris C++\Common\Common.suo.old">
+</Event><Event ErrorLevel="0" Project="Common" Source="Common.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="Common" Source="Common.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Common.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Common.sln" Description="Converted">
+</Event></UpgradeLog>

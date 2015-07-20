@@ -1,0 +1,258 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Coverage Finder.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Coverage Finder.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COVERAGEFINDER_DIALOG DIALOGEX 0, 0, 443, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Coverage Finder - Control Panel"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "E&xit",IDOK,7,49,160,14
+    PUSHBUTTON      "&Find a Path",IDC_POINTBUTTON,87,7,80,14
+    PUSHBUTTON      "&Redraw Points",IDC_DRAWPROBE,7,21,80,14
+    PUSHBUTTON      "&Erase!",IDC_ERASE,87,35,80,14
+    PUSHBUTTON      "&Cover Area",IDC_COVER,87,21,80,14
+    CONTROL         "Vertical Divide",IDC_VERTCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,112,58,9
+    CONTROL         "Horizontal Divide",IDC_HORZCHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,270,121,65,10
+    PUSHBUTTON      "&Probe the Points",IDC_RECTBTN,7,7,80,14
+    PUSHBUTTON      "&Add Obstacle Rectangle",IDC_OBRECTBTN,7,35,80,14
+    COMBOBOX        IDC_SCANTYPE,43,65,127,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Scan &Direction",IDC_DIRCTLABEL,7,96,46,10
+    COMBOBOX        IDC_SCANVERT,103,109,67,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Scan &Vertical Start Position",IDC_SCANVERTLABEL,5,111,87,8
+    GROUPBOX        "Options (Apply to drawing and erasing)",IDC_STATIC,174,7,134,94
+    CONTROL         "O&bstacle Rectangles",IDC_OBRECTSCHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,179,15,81,9
+    CONTROL         "Ver&tices of Obstacles",IDC_VERTRECTSCHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,179,24,86,11
+    CONTROL         "Pathfinding &Lines",IDC_PATHFINDLINECHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,179,35,71,10
+    CONTROL         "Vertical Di&vision Lines",IDC_VERTDIVCHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,179,45,85,10
+    CONTROL         "Hori&zontal Division Lines",IDC_HORZDIVCHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,179,55,93,9
+    CONTROL         "Rectangle Division De&finitions",IDC_RECTDIVCHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,179,65,107,9
+    CONTROL         "&Most Recent Scan",IDC_SCANCHK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,179,75,72,9
+    COMBOBOX        IDC_SCANHORZ,103,123,67,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Scan H&orizontal Start Position",IDC_SCANHORZLABEL,6,125,95,9,SS_PATHELLIPSIS
+    EDITTEXT        IDC_WIDTHBOX,359,75,77,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_HEIGHTBOX,359,89,77,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Window &Width",IDC_STATIC,310,77,48,10
+    LTEXT           "Window Hei&ght",IDC_STATIC,310,90,49,10
+    PUSHBUTTON      "Apply the ne&w size settings",IDC_APPLYWINDOW,336,104,100,13,BS_MULTILINE
+    PUSHBUTTON      "Restore the new size settings",IDC_RESTOREWINDOW,336,118,100,13,BS_MULTILINE
+    EDITTEXT        IDC_DRAWSPEED,217,121,45,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Draw Speed:\n0 = fastest\n1 = slowest\n2+ = faster",IDC_SPEEDLBL,175,102,41,35
+    LTEXT           "Sub-Divided Rectangles:",IDC_SUBRECTLBL,311,7,85,10,WS_BORDER
+    LTEXT           "Total Area:",IDC_TOTALAREA,311,34,85,10,WS_BORDER
+    LTEXT           "White Space Area:",IDC_TOTALAREA2,311,21,85,10,WS_BORDER
+    LTEXT           "Coverage Length:",IDC_COVERAGELEN,311,48,85,10,WS_BORDER
+    LTEXT           "Connecting Path Length:",IDC_COVERAGELEN2,311,62,85,10,WS_BORDER
+    LTEXT           "",IDC_SUBVAL,401,7,35,10,WS_BORDER
+    LTEXT           "",IDC_WHITEVAL,401,21,35,10,WS_BORDER
+    LTEXT           "",IDC_TOTALVAL,401,34,35,10,WS_BORDER
+    LTEXT           "",IDC_COVERVAL,401,48,35,10,WS_BORDER
+    LTEXT           "",IDC_CONNECTVAL,401,62,35,10,WS_BORDER
+    LTEXT           "Scan T&ype",IDC_SCANTYPELBL,7,66,33,10
+    COMBOBOX        IDC_SCANDIRECT,55,95,115,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SCANHEUR,55,80,115,79,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Scan He&uristic",IDC_HEURLBL,7,82,45,10
+    PUSHBUTTON      "Sele&ct All",IDC_SALL,175,88,60,12
+    PUSHBUTTON      "Select &None",IDC_SNONE,247,88,60,12
+    LTEXT           "Probe Characteristics:",IDC_SPEEDLBL2,260,103,71,9
+    PUSHBUTTON      "Browse...",IDC_BROWSEBUTTON,273,138,74,12
+    EDITTEXT        IDC_FILENAME,102,138,167,12,ES_AUTOHSCROLL
+    LTEXT           "Output File Name:",IDC_FILELABEL,7,141,92,8
+    PUSHBUTTON      "Save...",IDC_SAVEPATHBUTTON,362,138,74,12
+END
+
+IDD_DISPLAY DIALOGEX 0, 0, 350, 306
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_WINDOWEDGE | WS_EX_APPWINDOW
+CAPTION "Graphical Display"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Written for Christopher Pitstick's science fair project - to be presented at the Carroll HS Science Fair on Feb. 15, 2004."
+            VALUE "CompanyName", "C-Soft"
+            VALUE "FileDescription", "Performs various search methods on a rectangular area. Also includes rudimentary pathfinding"
+            VALUE "FileVersion", "2.0"
+            VALUE "InternalName", "Coverage Finder.exe"
+            VALUE "LegalCopyright", "None!"
+            VALUE "LegalTrademarks", "None!"
+            VALUE "OriginalFilename", "Coverage Finder.exe"
+            VALUE "ProductName", "Master Coverage Finder"
+            VALUE "ProductVersion", "2.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_COVERAGEFINDER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 436
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 299
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\Coverage Finder.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Load",                       ID_FILE_LOAD
+        MENUITEM "&Save",                       57603
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       ID_FILE_EXIT
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Coverage Finder.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
